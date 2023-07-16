@@ -1,5 +1,7 @@
 <?php
 
+namespace Majeedfahad\Budgetable\Traits;
+
 use Majeedfahad\Budgetable\Models\FinancialBudget;
 trait HasBudget
 {
