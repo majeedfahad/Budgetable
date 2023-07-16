@@ -1,4 +1,7 @@
 <?php
+
+namespace Majeedfahad\Budgetable\Providers;
+
 use \Illuminate\Support\ServiceProvider;
 class BudgetableServiceProvider extends ServiceProvider
 {
