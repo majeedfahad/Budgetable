@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Majeedfahad\\Budgetable\\Providers\\BusgetableServiceProvider"
+                "Majeedfahad\\Budgetable\\Providers\\BudgetableServiceProvider"
             ]
         }
     }
