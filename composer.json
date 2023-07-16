@@ -15,6 +15,13 @@
         }
     ],
     "require": {
-        "illuminate/support": "^11.0@dev"
+        "illuminate/support": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Majeedfahad\\Workflower\\Providers\\WorkflowerServiceProvider"
+            ]
+        }
     }
 }
