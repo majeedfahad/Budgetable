@@ -7,6 +7,6 @@ trait HasBudget
 {
     public function financialBudget()
     {
-        return $this->morphMany(FinancialBudget::class, 'budgetable');
+        return $this->morphOne(FinancialBudget::class, 'budgetable');
     }
 }
