@@ -2,9 +2,8 @@
 
 namespace Majeedfahad\Budgetable\Models;
 
-use App\Contracts\Budgetable;
-use App\Contracts\Expensable;
-use App\Exceptions\OrderBusinessException;
+use Majeedfahad\Budgetable\Contracts\Budgetable;
+use Majeedfahad\Budgetable\Contracts\Expensable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -78,7 +77,7 @@ class FinancialBudget extends Model
     public function addChildren(Budgetable $obj, $budget = 0)
     {
         if(!$this->canAddExpense($budget)) {
-            throw new OrderBusinessException("لا يمكن اضافة هذا المبلغ ($budget)");
+            throw new \Exception("لا يمكن اضافة هذا المبلغ ($budget)");
         }
 
         return $obj->financialBudget()->create([
@@ -90,7 +89,7 @@ class FinancialBudget extends Model
     public function addExpense(Expensable $obj, $amount = 0)
     {
         if(!$this->canAddExpense($amount)) {
-            throw new OrderBusinessException("لا يمكن اضافة هذا المبلغ ($amount)");
+            throw new \Exception("لا يمكن اضافة هذا المبلغ ($amount)");
         }
 
         return $obj->expense()->create([
