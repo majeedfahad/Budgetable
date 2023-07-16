@@ -1,0 +1,20 @@
+{
+    "name": "majeedfahad/budgetable",
+    "description": "Manage the budgetable models in the project",
+    "minimum-stability": "dev",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Majeedfahad\\Budgetable\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Majeed",
+            "email": "aabdulmajeed16@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^11.0@dev"
+    }
+}
